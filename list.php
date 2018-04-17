@@ -1,5 +1,5 @@
 <div class="content-area">
-	<p>Next available number: <strong>226</strong> <span class="create-new"><a href="#">Create new</a></span></p>
+	<p>Next available number: <strong>226</strong> | <span class="create-new"><a href="#">Create new</a></span></p>
 
 	<div class="table-responsive">
 		<table class="table table-hover">
@@ -51,7 +51,7 @@
 				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
 			</tr>
 			<tr>
-				<td>223</td>
+				<td>222</td>
 				<td>Nouveau Matin encore</td>
 				<td>Attorney General's Office</td>
 				<td>snail1966@hotmail.com</td>
@@ -62,7 +62,7 @@
 				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
 			</tr>
 			<tr>
-				<td>223</td>
+				<td>221</td>
 				<td>Nouveau Matin encore</td>
 				<td>Attorney General's Office</td>
 				<td>snail1966@hotmail.com</td>
@@ -73,7 +73,7 @@
 				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
 			</tr>
 			<tr>
-				<td>223</td>
+				<td>220</td>
 				<td>Nouveau Matin encore</td>
 				<td>Attorney General's Office</td>
 				<td>snail1966@hotmail.com</td>
@@ -84,7 +84,7 @@
 				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
 			</tr>
 			<tr>
-				<td>223</td>
+				<td>219</td>
 				<td>Nouveau Matin encore</td>
 				<td>Attorney General's Office</td>
 				<td>snail1966@hotmail.com</td>
