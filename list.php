@@ -1,5 +1,5 @@
 <div class="content-area">
-	<p>Next available number: <strong>226</strong> | <span class="create-new"><a href="#">Create new</a></span></p>
+	<p>Next available number: <strong>226</strong> | <span class="create-new"><a href="/?page=create">Create new</a></span></p>
 
 	<div class="table-responsive">
 		<table class="table table-hover">
