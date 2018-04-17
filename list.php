@@ -37,7 +37,7 @@
 				<td>2018-04-10</td>
 				<td>2018-19</td>
 				<td>Test</td>
-				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+				<td><a href="/?page=edit">Edit</a> | <a href="#">Delete</a></td>
 			</tr>
 			<tr>
 				<td>223</td>

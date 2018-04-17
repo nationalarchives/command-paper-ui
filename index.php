@@ -8,7 +8,11 @@ include 'header.php';
 			<div class="col-md-12">
 				<h1>Command Paper Numbers</h1>
 				<?php
-				include 'list.php';
+				if ( $_GET['page'] == 'edit' ) {
+					include 'edit.php';
+				} else {
+					include 'list.php';
+				}
 				?>
 			</div>
 		</div>
