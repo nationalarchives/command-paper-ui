@@ -1,0 +1,22 @@
+.account-controls {
+    background-color: #2D3B59;
+    color: #FFF;
+}
+.account-controls a {
+    color: #FFF;
+}
+.account-controls ul {
+    padding: 0;
+    margin: 7px 0;
+}
+.account-controls ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 0.5em;
+    margin: 0;
+}
+.account-controls ul li span {
+    padding: 3px 7px;
+    background-color: #222;
+    border-radius: 3px;
+}
