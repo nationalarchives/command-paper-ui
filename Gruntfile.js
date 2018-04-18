@@ -9,8 +9,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'css/tna-base.css': 'sass/base-sass.scss',
-                    'css/tna-forms.css': 'sass/forms-sass.scss'
+                    'css/tna-base.css': 'sass/base-sass.scss'
                 }
             }
         },
@@ -20,8 +19,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/tna-base.css.min': ['css/tna-base.css'],
-                    'css/tna-forms.css.min': ['css/tna-forms.css']
+                    'css/tna-base.css.min': ['css/tna-base.css']
                 }
             }
         },
