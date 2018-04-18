@@ -68,8 +68,18 @@
 			<div id="breadcrumb-holder" class="tna-breadcrumb">
 				<div class="breadcrumbs">
 					<span><a href="/">The National Archives</a></span>
-					<span class="sep">&gt;</span> <span><a href="/">Command Paper Numbers</a></span>
-					<span class="sep">&gt;</span> <span><a href="#">About</a></span>
+					<?php if ( $_GET['page'] == 'edit' ) { ?>
+						<span class="sep">&gt;</span> <span><a href="/">Command Paper Numbers</a></span>
+						<span class="sep">&gt;</span> <span>Edit</span>
+					<?php } elseif ( $_GET['page'] == 'create' ) { ?>
+						<span class="sep">&gt;</span> <span><a href="/">Command Paper Numbers</a></span>
+						<span class="sep">&gt;</span> <span>Create</span>
+					<?php } elseif ( $_GET['page'] == 'delete' ) { ?>
+						<span class="sep">&gt;</span> <span><a href="/">Command Paper Numbers</a></span>
+						<span class="sep">&gt;</span> <span>Delete</span>
+					<?php } else { ?>
+					<span class="sep">&gt;</span> <span>Command Paper Numbers</span>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
