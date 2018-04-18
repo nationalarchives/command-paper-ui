@@ -13,6 +13,7 @@ $data = data( $_GET );
 				<label for="number">Number</label>
 				<input type="text" id="number" name="number" value="<?php echo $data['number'] ?>" disabled>
 			</div>
+			<?php if ( $user == 'tna' ) { ?>
 			<div class="form-row">
 				<label for="department">Department</label>
 				<select id="department" name="department" aria-required="true" required <?php echo $data['disabled'] ?>>
@@ -27,6 +28,7 @@ $data = data( $_GET );
 				<label for="requester">Requester</label>
 				<input type="text" id="requester" name="requester" value="<?php echo $data['requester'] ?>" aria-required="true" required <?php echo $data['disabled'] ?>>
 			</div>
+			<?php } ?>
 			<div class="form-row">
 				<label for="title">Title</label>
 				<textarea id="title" name="title" aria-required="true" required <?php echo $data['disabled'] ?>><?php echo $data['title'] ?></textarea>
@@ -39,6 +41,7 @@ $data = data( $_GET );
 				<label for="requested">Date requested</label>
 				<input type="date" id="requested" name="requested" value="<?php echo $data['requested'] ?>" disabled>
 			</div>
+			<?php if ( $user == 'tna' ) { ?>
 			<div class="form-row">
 				<label for="pub_date">Actual publication date <span class="optional">(optional)</span></label>
 				<input type="date" id="pub_date" name="pub_date" value="<?php echo $data['pub_date'] ?>" <?php echo $data['disabled'] ?>>
@@ -55,6 +58,7 @@ $data = data( $_GET );
 				<label for="session">Parliamentary session <span class="optional">(optional)</span></label>
 				<input type="text" id="session" name="session" value="<?php echo $data['session'] ?>" <?php echo $data['disabled'] ?>>
 			</div>
+			<?php } ?>
 			<div class="form-row">
 				<label for="comments">Comments <span class="optional">(optional)</span></label>
 				<textarea id="comments" name="comments" <?php echo $data['disabled'] ?>><?php echo $data['comments'] ?></textarea>
