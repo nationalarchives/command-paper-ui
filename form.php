@@ -64,10 +64,10 @@ if (isset($_GET)) {
 				<label for="department">Department</label>
 				<select id="department" name="department" aria-required="true" required <?php echo $disabled ?>>
 					<option value="">Please select</option>
-					<option value="" <?php echo $selected ?>>Attorney General's Office</option>
-					<option value="">Competition and Markets Authority</option>
-					<option value="">Insolvency Service</option>
-					<option value="">Other</option>
+					<option value="1" <?php echo $selected ?>>Attorney General's Office</option>
+					<option value="2">Competition and Markets Authority</option>
+					<option value="3">Insolvency Service</option>
+					<option value="4">Other</option>
 				</select>
 			</div>
 			<div class="form-row">
