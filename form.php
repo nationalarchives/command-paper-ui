@@ -11,7 +11,9 @@ if (isset($_GET)) {
 		$pub_date = '2018-04-11';
 		$session = '2018-19';
 		$comments = 'Testing 1 2 3 testing again';
-	} else {
+		$disabled = '';
+		$submit = 'Save';
+	} elseif ($_GET['page']=='create') {
 		$legend = 'Create new';
 		$number = '226';
 		$requester = 'Admin';
@@ -21,6 +23,20 @@ if (isset($_GET)) {
 		$pub_date = '';
 		$session = '';
 		$comments = '';
+		$disabled = '';
+		$submit = 'Save';
+	} else {
+		$legend = 'Delete';
+		$number = '224';
+		$requester = 'snail1966@hotmail.com';
+		$title = 'Nouveau Matin encore';
+		$pub_due_date = '2018-05-06';
+		$requested = '2018-04-10';
+		$pub_date = '2018-04-11';
+		$session = '2018-19';
+		$comments = 'Testing 1 2 3 testing again';
+		$disabled = 'disabled';
+		$submit = 'Delete';
 	}
 }
 
@@ -36,7 +52,7 @@ if (isset($_GET)) {
 			</div>
 			<div class="form-row">
 				<label for="department">Department</label>
-				<select id="department" name="department">
+				<select id="department" name="department" <?php echo $disabled ?>>
 					<option value="">Please select</option>
 					<option value="">Attorney General's Office</option>
 				</select>
@@ -47,11 +63,11 @@ if (isset($_GET)) {
 			</div>
 			<div class="form-row">
 				<label for="title">Title</label>
-				<textarea id="title" name="title"><?php echo $title ?></textarea>
+				<textarea id="title" name="title" <?php echo $disabled ?>><?php echo $title ?></textarea>
 			</div>
 			<div class="form-row">
 				<label for="pub_due_date">Publication due date</label>
-				<input type="date" id="pub_due_date" name="pub_due_date" value="<?php echo $pub_due_date ?>">
+				<input type="date" id="pub_due_date" name="pub_due_date" value="<?php echo $pub_due_date ?>" <?php echo $disabled ?>>
 			</div>
 			<div class="form-row">
 				<label for="requested">Date requested</label>
@@ -59,26 +75,26 @@ if (isset($_GET)) {
 			</div>
 			<div class="form-row">
 				<label for="pub_date">Actual publication date</label>
-				<input type="date" id="pub_date" name="pub_date" value="<?php echo $pub_date ?>">
+				<input type="date" id="pub_date" name="pub_date" value="<?php echo $pub_date ?>" <?php echo $disabled ?>>
 			</div>
 			<div class="form-row checkbox">
-				<input type="checkbox" id="received" name="received" value="received">
+				<input type="checkbox" id="received" name="received" value="received" <?php echo $disabled ?>>
 				<label for="received">Copy received</label>
 			</div>
 			<div class="form-row checkbox">
-				<input type="checkbox" id="uploaded" name="uploaded" value="uploaded">
+				<input type="checkbox" id="uploaded" name="uploaded" value="uploaded" <?php echo $disabled ?>>
 				<label for="uploaded">Uploaded to TNA</label>
 			</div>
 			<div class="form-row">
 				<label for="session">Parliamentary session</label>
-				<input type="text" id="session" name="session" value="<?php echo $session ?>">
+				<input type="text" id="session" name="session" value="<?php echo $session ?>" <?php echo $disabled ?>>
 			</div>
 			<div class="form-row">
 				<label for="comments">Comments</label>
-				<textarea id="comments" name="comments"><?php echo $comments ?></textarea>
+				<textarea id="comments" name="comments" <?php echo $disabled ?>><?php echo $comments ?></textarea>
 			</div>
 			<div class="form-row">
-				<input type="submit" name="save" id="save" value="Save" class="button">
+				<input type="submit" name="save" id="save" value="<?php echo $submit ?>" class="button">
 				<a href="/" class="button tertiary" role="button">Cancel</a>
 			</div>
 		</fieldset>

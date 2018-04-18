@@ -25,11 +25,6 @@
     padding: 1em;
     margin-bottom: 1.6em;
 }
-input[type=date] {
-    border: 1px solid #ccc;
-    padding: 2px;
-    height: 34px;
-    text-indent: 5px;
-    min-width: 220px;
-    width: auto;
+table td {
+    font-size: 0.9em;
 }

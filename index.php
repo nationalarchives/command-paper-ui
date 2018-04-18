@@ -12,6 +12,8 @@ include 'header.php';
 					include 'form.php';
 				} elseif ( $_GET['page'] == 'create' ) {
 					include 'form.php';
+				} elseif ( $_GET['page'] == 'delete' ) {
+					include 'form.php';
 				} else {
 					include 'list.php';
 				}
