@@ -5,11 +5,13 @@ if (isset($_GET)) {
 		$legend = 'Edit';
 		$message = '';
 		$number = '224';
+		$selected = 'selected';
 		$requester = 'snail1966@hotmail.com';
 		$title = 'Nouveau Matin encore';
 		$pub_due_date = '2018-05-06';
 		$requested = '2018-04-10';
 		$pub_date = '2018-04-11';
+		$checked = 'checked';
 		$session = '2018-19';
 		$comments = 'Testing 1 2 3 testing again';
 		$disabled = '';
@@ -18,26 +20,28 @@ if (isset($_GET)) {
 		$legend = 'Create new';
 		$message = '';
 		$number = '226';
+		$selected = '';
 		$requester = 'Admin';
 		$title = '';
 		$pub_due_date = '';
 		$requested = '';
 		$pub_date = '';
+		$checked = '';
 		$session = '';
 		$comments = '';
 		$disabled = '';
 		$submit = 'Save';
 	} else {
 		$legend = 'Delete';
-		$message = '<div class="form-row"><blockquote class="emphasis-alert">
-					<p><strong>Are you sure you want to delete this?</strong></p>
-					</blockquote></div>';
+		$message = '<div class="form-row"><blockquote class="emphasis-alert"><p><strong>Are you sure you want to delete this?</strong></p></blockquote></div>';
 		$number = '224';
+		$selected = 'selected';
 		$requester = 'snail1966@hotmail.com';
 		$title = 'Nouveau Matin encore';
 		$pub_due_date = '2018-05-06';
 		$requested = '2018-04-10';
 		$pub_date = '2018-04-11';
+		$checked = 'checked';
 		$session = '2018-19';
 		$comments = 'Testing 1 2 3 testing again';
 		$disabled = 'disabled';
@@ -60,7 +64,10 @@ if (isset($_GET)) {
 				<label for="department">Department</label>
 				<select id="department" name="department" <?php echo $disabled ?>>
 					<option value="">Please select</option>
-					<option value="">Attorney General's Office</option>
+					<option value="" <?php echo $selected ?>>Attorney General's Office</option>
+					<option value="">Competition and Markets Authority</option>
+					<option value="">Insolvency Service</option>
+					<option value="">Other</option>
 				</select>
 			</div>
 			<div class="form-row">
@@ -84,7 +91,7 @@ if (isset($_GET)) {
 				<input type="date" id="pub_date" name="pub_date" value="<?php echo $pub_date ?>" <?php echo $disabled ?>>
 			</div>
 			<div class="form-row checkbox">
-				<input type="checkbox" id="received" name="received" value="received" <?php echo $disabled ?>>
+				<input type="checkbox" id="received" name="received" value="received" <?php echo $checked ?> <?php echo $disabled ?>>
 				<label for="received">Copy received</label>
 			</div>
 			<div class="form-row checkbox">
