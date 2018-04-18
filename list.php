@@ -17,9 +17,9 @@
 			</tr>
 			</thead>
 			<tbody>
-			<?php for ($i = 225 ; $i >= 219; $i--) { ?>
+			<?php for ($i = 225 ; $i >= 216; $i--) { ?>
 			<tr>
-				<td><?php echo $i ?></td>
+				<td><strong><?php echo $i ?></strong></td>
 				<td>Nouveau Matin encore</td>
 				<td>Attorney General's Office</td>
 				<td>snail1966@hotmail.com</td>

@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('Europe/London');
 if (isset($_GET)) {
 	if ($_GET['page']=='edit') {
 		$legend = 'Edit';
@@ -21,10 +21,10 @@ if (isset($_GET)) {
 		$message = '';
 		$number = '226';
 		$selected = '';
-		$requester = 'Admin';
+		$requester = '';
 		$title = '';
 		$pub_due_date = '';
-		$requested = '';
+		$requested = date('Y-m-d');
 		$pub_date = '';
 		$checked = '';
 		$session = '';
@@ -62,7 +62,7 @@ if (isset($_GET)) {
 			</div>
 			<div class="form-row">
 				<label for="department">Department</label>
-				<select id="department" name="department" <?php echo $disabled ?>>
+				<select id="department" name="department" aria-required="true" required <?php echo $disabled ?>>
 					<option value="">Please select</option>
 					<option value="" <?php echo $selected ?>>Attorney General's Office</option>
 					<option value="">Competition and Markets Authority</option>
@@ -72,22 +72,22 @@ if (isset($_GET)) {
 			</div>
 			<div class="form-row">
 				<label for="requester">Requester</label>
-				<input type="text" id="requester" name="requester" value="<?php echo $requester ?>" disabled>
+				<input type="text" id="requester" name="requester" value="<?php echo $requester ?>" aria-required="true" required <?php echo $disabled ?>>
 			</div>
 			<div class="form-row">
 				<label for="title">Title</label>
-				<textarea id="title" name="title" <?php echo $disabled ?>><?php echo $title ?></textarea>
+				<textarea id="title" name="title" aria-required="true" required <?php echo $disabled ?>><?php echo $title ?></textarea>
 			</div>
 			<div class="form-row">
 				<label for="pub_due_date">Publication due date</label>
-				<input type="date" id="pub_due_date" name="pub_due_date" value="<?php echo $pub_due_date ?>" <?php echo $disabled ?>>
+				<input type="date" id="pub_due_date" name="pub_due_date" value="<?php echo $pub_due_date ?>" aria-required="true" required <?php echo $disabled ?>>
 			</div>
 			<div class="form-row">
 				<label for="requested">Date requested</label>
 				<input type="date" id="requested" name="requested" value="<?php echo $requested ?>" disabled>
 			</div>
 			<div class="form-row">
-				<label for="pub_date">Actual publication date</label>
+				<label for="pub_date">Actual publication date <span class="optional">(optional)</span></label>
 				<input type="date" id="pub_date" name="pub_date" value="<?php echo $pub_date ?>" <?php echo $disabled ?>>
 			</div>
 			<div class="form-row checkbox">
@@ -99,11 +99,11 @@ if (isset($_GET)) {
 				<label for="uploaded">Uploaded to TNA</label>
 			</div>
 			<div class="form-row">
-				<label for="session">Parliamentary session</label>
+				<label for="session">Parliamentary session <span class="optional">(optional)</span></label>
 				<input type="text" id="session" name="session" value="<?php echo $session ?>" <?php echo $disabled ?>>
 			</div>
 			<div class="form-row">
-				<label for="comments">Comments</label>
+				<label for="comments">Comments <span class="optional">(optional)</span></label>
 				<textarea id="comments" name="comments" <?php echo $disabled ?>><?php echo $comments ?></textarea>
 			</div>
 			<div class="form-row">
