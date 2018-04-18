@@ -61,7 +61,7 @@ $data = data( $_GET );
 			</div>
 			<div class="form-row">
 				<input type="submit" name="save" id="save" value="<?php echo $data['submit'] ?>" class="button">
-				<a href="/" class="button tertiary" role="button">Cancel</a>
+				<a href="/?user=<?php echo $user ?>" class="button tertiary" role="button">Cancel</a>
 			</div>
 		</fieldset>
 	</form>

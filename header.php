@@ -50,14 +50,23 @@
 		</div>
 	</div>
 </header>
+<?php
+$user = $_GET['user']
+?>
 <div class="account-controls">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-right">
+				<?php if ( isset($_GET['user']) ) { ?>
 				<ul>
-					<li>Welcome, you are currently signed in as <span>Admin</span></li>
-					<li><a href="#">Sign out</a></li>
+					<li>Welcome, you are currently signed in as <span><?php echo strtoupper($user) ?></span></li>
+					<li><a href="/">Sign out</a></li>
 				</ul>
+				<?php } else { ?>
+					<ul>
+						<li><a href="/">Sign in</a></li>
+					</ul>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
@@ -69,13 +78,13 @@
 				<div class="breadcrumbs">
 					<span><a href="/">The National Archives</a></span>
 					<?php if ( $_GET['page'] == 'edit' ) { ?>
-						<span class="sep">&gt;</span> <span><a href="/">Command Paper Numbers</a></span>
+						<span class="sep">&gt;</span> <span><a href="/?user=<?php echo $user ?>">Command Paper Numbers</a></span>
 						<span class="sep">&gt;</span> <span>Edit</span>
 					<?php } elseif ( $_GET['page'] == 'create' ) { ?>
-						<span class="sep">&gt;</span> <span><a href="/">Command Paper Numbers</a></span>
+						<span class="sep">&gt;</span> <span><a href="/?user=<?php echo $user ?>">Command Paper Numbers</a></span>
 						<span class="sep">&gt;</span> <span>Create</span>
 					<?php } elseif ( $_GET['page'] == 'delete' ) { ?>
-						<span class="sep">&gt;</span> <span><a href="/">Command Paper Numbers</a></span>
+						<span class="sep">&gt;</span> <span><a href="/?user=<?php echo $user ?>">Command Paper Numbers</a></span>
 						<span class="sep">&gt;</span> <span>Delete</span>
 					<?php } else { ?>
 					<span class="sep">&gt;</span> <span>Command Paper Numbers</span>

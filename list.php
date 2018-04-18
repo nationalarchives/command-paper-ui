@@ -1,5 +1,5 @@
 <div class="content-area">
-	<p>Next available number: <strong>226</strong> <span class="create-new"><a href="/?page=create" class="control-button">Create new</a></span></p>
+	<p>Next available number: <strong>226</strong> <span class="create-new"><a href="/?user=<?php echo $user ?>&page=create" class="control-button">Create new</a></span></p>
 
 	<div class="table-responsive">
 		<table class="table table-hover">
@@ -28,8 +28,8 @@
 				<td>2018-19</td>
 				<td>Test</td>
 				<td>
-					<a href="/?page=edit&number=<?php echo $i ?>" class="control-button">Edit</a>
-					<a href="/?page=delete&number=<?php echo $i ?>" class="control-button">Delete</a>
+					<a href="/?user=<?php echo $user ?>&page=edit&number=<?php echo $i ?>" class="control-button">Edit</a>
+					<a href="/?user=<?php echo $user ?>&page=delete&number=<?php echo $i ?>" class="control-button">Delete</a>
 				</td>
 			</tr>
 			<?php } ?>
