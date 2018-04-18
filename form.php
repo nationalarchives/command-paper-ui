@@ -3,6 +3,7 @@
 if (isset($_GET)) {
 	if ($_GET['page']=='edit') {
 		$legend = 'Edit';
+		$message = '';
 		$number = '224';
 		$requester = 'snail1966@hotmail.com';
 		$title = 'Nouveau Matin encore';
@@ -15,6 +16,7 @@ if (isset($_GET)) {
 		$submit = 'Save';
 	} elseif ($_GET['page']=='create') {
 		$legend = 'Create new';
+		$message = '';
 		$number = '226';
 		$requester = 'Admin';
 		$title = '';
@@ -27,6 +29,9 @@ if (isset($_GET)) {
 		$submit = 'Save';
 	} else {
 		$legend = 'Delete';
+		$message = '<div class="form-row"><blockquote class="emphasis-alert">
+					<p><strong>Are you sure you want to delete this?</strong></p>
+					</blockquote></div>';
 		$number = '224';
 		$requester = 'snail1966@hotmail.com';
 		$title = 'Nouveau Matin encore';
@@ -46,6 +51,7 @@ if (isset($_GET)) {
 	<form>
 		<fieldset>
 			<legend><?php echo $legend ?></legend>
+			<?php echo $message ?>
 			<div class="form-row">
 				<label for="number">Number</label>
 				<input type="text" id="number" name="number" value="<?php echo $number ?>" disabled>

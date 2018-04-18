@@ -25,6 +25,9 @@
     padding: 1em;
     margin-bottom: 1.6em;
 }
-table td {
+table {
     font-size: 0.9em;
+}
+.form-row blockquote {
+    max-width: 420px;
 }
