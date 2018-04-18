@@ -31,3 +31,13 @@ table {
 .form-row blockquote {
     max-width: 420px;
 }
+.control-button {
+    padding: 3px 7px;
+    background: #eee;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+.control-button:hover {
+    color: #000;
+    background-color: #FCE45C;
+}

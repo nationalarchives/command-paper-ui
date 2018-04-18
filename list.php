@@ -1,5 +1,5 @@
 <div class="content-area">
-	<p>Next available number: <strong>226</strong> | <span class="create-new"><a href="/?page=create">Create new</a></span></p>
+	<p>Next available number: <strong>226</strong> <span class="create-new"><a href="/?page=create" class="control-button">Create new</a></span></p>
 
 	<div class="table-responsive">
 		<table class="table table-hover">
@@ -17,8 +17,9 @@
 			</tr>
 			</thead>
 			<tbody>
+			<?php for ($i = 225 ; $i >= 219; $i--) { ?>
 			<tr>
-				<td>225</td>
+				<td><?php echo $i ?></td>
 				<td>Nouveau Matin encore</td>
 				<td>Attorney General's Office</td>
 				<td>snail1966@hotmail.com</td>
@@ -26,74 +27,9 @@
 				<td>2018-04-10</td>
 				<td>2018-19</td>
 				<td>Test</td>
-				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+				<td><a href="/?page=edit&number=<?php echo $i ?>" class="control-button">Edit</a> <a href="/?page=delete&number=<?php echo $i ?>" class="control-button">Delete</a></td>
 			</tr>
-			<tr>
-				<td>224</td>
-				<td>Nouveau Matin encore</td>
-				<td>Attorney General's Office</td>
-				<td>snail1966@hotmail.com</td>
-				<td>2018-05-06</td>
-				<td>2018-04-10</td>
-				<td>2018-19</td>
-				<td>Test</td>
-				<td><a href="/?page=edit">Edit</a> | <a href="/?page=delete">Delete</a></td>
-			</tr>
-			<tr>
-				<td>223</td>
-				<td>Nouveau Matin encore</td>
-				<td>Attorney General's Office</td>
-				<td>snail1966@hotmail.com</td>
-				<td>2018-05-06</td>
-				<td>2018-04-10</td>
-				<td>2018-19</td>
-				<td>Test</td>
-				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-			</tr>
-			<tr>
-				<td>222</td>
-				<td>Nouveau Matin encore</td>
-				<td>Attorney General's Office</td>
-				<td>snail1966@hotmail.com</td>
-				<td>2018-05-06</td>
-				<td>2018-04-10</td>
-				<td>2018-19</td>
-				<td>Test</td>
-				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-			</tr>
-			<tr>
-				<td>221</td>
-				<td>Nouveau Matin encore</td>
-				<td>Attorney General's Office</td>
-				<td>snail1966@hotmail.com</td>
-				<td>2018-05-06</td>
-				<td>2018-04-10</td>
-				<td>2018-19</td>
-				<td>Test</td>
-				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-			</tr>
-			<tr>
-				<td>220</td>
-				<td>Nouveau Matin encore</td>
-				<td>Attorney General's Office</td>
-				<td>snail1966@hotmail.com</td>
-				<td>2018-05-06</td>
-				<td>2018-04-10</td>
-				<td>2018-19</td>
-				<td>Test</td>
-				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-			</tr>
-			<tr>
-				<td>219</td>
-				<td>Nouveau Matin encore</td>
-				<td>Attorney General's Office</td>
-				<td>snail1966@hotmail.com</td>
-				<td>2018-05-06</td>
-				<td>2018-04-10</td>
-				<td>2018-19</td>
-				<td>Test</td>
-				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-			</tr>
+			<?php } ?>
 			</tbody>
 		</table>
 	</div>

@@ -4,7 +4,7 @@ if (isset($_GET)) {
 	if ($_GET['page']=='edit') {
 		$legend = 'Edit';
 		$message = '';
-		$number = '224';
+		$number = $_GET['number'];
 		$selected = 'selected';
 		$requester = 'snail1966@hotmail.com';
 		$title = 'Nouveau Matin encore';
@@ -34,7 +34,7 @@ if (isset($_GET)) {
 	} else {
 		$legend = 'Delete';
 		$message = '<div class="form-row"><blockquote class="emphasis-alert"><p><strong>Are you sure you want to delete this?</strong></p></blockquote></div>';
-		$number = '224';
+		$number = $_GET['number'];
 		$selected = 'selected';
 		$requester = 'snail1966@hotmail.com';
 		$title = 'Nouveau Matin encore';
