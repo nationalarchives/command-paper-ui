@@ -27,7 +27,10 @@
 				<td>2018-04-10</td>
 				<td>2018-19</td>
 				<td>Test</td>
-				<td><a href="/?page=edit&number=<?php echo $i ?>" class="control-button">Edit</a> <a href="/?page=delete&number=<?php echo $i ?>" class="control-button">Delete</a></td>
+				<td>
+					<a href="/?page=edit&number=<?php echo $i ?>" class="control-button">Edit</a>
+					<a href="/?page=delete&number=<?php echo $i ?>" class="control-button">Delete</a>
+				</td>
 			</tr>
 			<?php } ?>
 			</tbody>
