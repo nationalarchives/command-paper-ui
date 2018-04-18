@@ -4,7 +4,6 @@ include 'data.php';
 $data = data( $_GET );
 
 ?>
-
 <div class="content-area">
 	<form>
 		<fieldset>
