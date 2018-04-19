@@ -50,9 +50,7 @@
 		</div>
 	</div>
 </header>
-<?php
-$user = $_GET['user']
-?>
+<?php $user = $_GET['user'] ?>
 <div class="account-controls">
 	<div class="container">
 		<div class="row">
@@ -64,7 +62,7 @@ $user = $_GET['user']
 				</ul>
 				<?php } else { ?>
 					<ul>
-						<li><a href="/">Sign in</a></li>
+						<li>Not Signed in</li>
 					</ul>
 				<?php } ?>
 			</div>
