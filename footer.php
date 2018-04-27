@@ -16,16 +16,11 @@
 <script type="text/javascript" src="./js/modernizr-custom.js"></script>
 
 <script>
-	console.log($('.picker').attr('type') !== 'date');
-	if($('.picker').attr('type') !== 'date') {
-		$('.picker').datepicker({
-			dateFormat: 'yy-mm-dd'
-		});
-	}
-</script>
-<script>
 	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-	if ( isSafari ) {
+	var isIE = !!window.ActiveXObject;
+	var isIE11 = '-ms-scroll-limit' in document.documentElement.style && '-ms-ime-align' in document.documentElement.style;
+	// console.log($('.picker').attr('type') !== 'date');
+	if( isIE || isIE11 || isSafari ) {
 		$('.picker').datepicker({
 			dateFormat: 'yy-mm-dd'
 		});
