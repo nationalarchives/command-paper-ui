@@ -1,5 +1,5 @@
 <div class="content-area">
-	<p>Next available number: <strong>226</strong> <span class="create-new"><a href="/?user=<?php echo $user ?>&page=create" class="control-button">Create new</a></span></p>
+	<p>Next available number: <strong>226</strong> <span class="create-new"><a href="/?user=<?php echo $user ?>&page=create" class="control-button" title="Create new request">Create new</a></span></p>
 
 	<div class="table-responsive">
 		<table class="table table-hover">
@@ -36,9 +36,9 @@
 				<?php } ?>
 				<td>Test</td>
 				<td>
-					<a href="/?user=<?php echo $user ?>&page=edit&number=<?php echo $i ?>" class="control-button">Edit</a>
+					<a href="/?user=<?php echo $user ?>&page=edit&number=<?php echo $i ?>" class="control-button" title="Edit request number <?php echo $i ?>">Edit</a>
 					<?php if ( $user == 'tna' ) { ?>
-					<a href="/?user=<?php echo $user ?>&page=delete&number=<?php echo $i ?>" class="control-button">Delete</a>
+					<a href="/?user=<?php echo $user ?>&page=delete&number=<?php echo $i ?>" class="control-button" title="Delete request number <?php echo $i ?>">Delete</a>
 					<?php } ?>
 				</td>
 			</tr>
