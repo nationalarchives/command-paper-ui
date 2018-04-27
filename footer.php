@@ -14,9 +14,16 @@
 </footer>
 
 <script type="text/javascript" src="./js/modernizr-custom.js"></script>
+<!--[if IE]>
 <script>
-	console.log(document.getElementsByClassName('picker').type !== 'date');
-	if(document.getElementsByClassName('picker').type !== 'date') {
+	$('.picker').datepicker({
+		dateFormat: 'yy-mm-dd'
+	});
+</script>
+<![endif]-->
+<script>
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	if ( isSafari ) {
 		$('.picker').datepicker({
 			dateFormat: 'yy-mm-dd'
 		});
