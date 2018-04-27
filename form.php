@@ -35,7 +35,7 @@ $data = data( $_GET );
 			</div>
 			<div class="form-row">
 				<label for="pub_due_date">Publication due date</label>
-				<input type="date" id="pub_due_date" name="pub_due_date" value="<?php echo $data['pub_due_date'] ?>" aria-required="true" required <?php echo $data['disabled'] ?>>
+				<input class="picker" type="date" id="pub_due_date" name="pub_due_date" value="<?php echo $data['pub_due_date'] ?>" aria-required="true" required <?php echo $data['disabled'] ?>>
 			</div>
 			<div class="form-row">
 				<label for="requested">Date requested</label>
