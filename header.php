@@ -12,9 +12,11 @@
 	<meta name="author" content="The National Archives">
 
 	<link rel="stylesheet" id="tna-google-fonts"  href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.14" type="text/css" media="all" />
-	<link rel="stylesheet" href="./css/tna-base.css?v=1.0">
-	<link rel="stylesheet" href="./css/command-paper.css?v=1.0">
+	<link rel="stylesheet" href="./css/tna-base.css?v=1.0" type="text/css" />
+	<link rel="stylesheet" href="./css/command-paper.css?v=1.0" type="text/css" />
+	<link rel="stylesheet" href="./jquery-ui/jquery-ui.min.css" type="text/css" />
 	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./jquery-ui/jquery-ui.min.js"></script>
 
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">

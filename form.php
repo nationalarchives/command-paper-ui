@@ -44,7 +44,7 @@ $data = data( $_GET );
 			<?php if ( $user == 'tna' ) { ?>
 			<div class="form-row">
 				<label for="pub_date">Actual publication date <span class="optional">(optional)</span></label>
-				<input type="date" id="pub_date" name="pub_date" value="<?php echo $data['pub_date'] ?>" <?php echo $data['disabled'] ?>>
+				<input class="picker" type="date" id="pub_date" name="pub_date" value="<?php echo $data['pub_date'] ?>" <?php echo $data['disabled'] ?>>
 			</div>
 			<div class="form-row checkbox">
 				<input type="checkbox" id="received" name="received" value="received" <?php echo $data['checked'] ?> <?php echo $data['disabled'] ?>>

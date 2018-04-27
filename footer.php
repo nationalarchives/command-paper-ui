@@ -13,7 +13,15 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/modernizr-custom.js"></script>
+<script>
+	console.log(document.getElementsByClassName('picker').type !== 'date');
+	if(document.getElementsByClassName('picker').type !== 'date') {
+		$('.picker').datepicker({
+			dateFormat: 'yy-mm-dd'
+		});
+	}
+</script>
 
 </body>
 </html>
