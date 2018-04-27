@@ -16,9 +16,12 @@
 <script type="text/javascript" src="./js/modernizr-custom.js"></script>
 <!--[if IE]>
 <script>
-	$('.picker').datepicker({
-		dateFormat: 'yy-mm-dd'
-	});
+	console.log(document.getElementsByClassName('picker').type !== 'date');
+	if(document.getElementsByClassName('picker').type !== 'date') {
+		$('.picker').datepicker({
+			dateFormat: 'yy-mm-dd'
+		});
+	}
 </script>
 <![endif]-->
 <script>
