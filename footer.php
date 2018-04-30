@@ -13,9 +13,7 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/lib/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="./js/command-papers.js"></script>
+<script src="js/dist/script.min.js"></script>
 
 </body>
 </html>
