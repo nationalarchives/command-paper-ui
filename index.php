@@ -14,8 +14,10 @@ include 'header.php';
 					include 'form.php';
 				} elseif ( $_GET['page'] == 'delete' ) {
 					include 'form.php';
-				} else {
+				} elseif ( isset($_GET['user']) ) {
 					include 'list.php';
+				} else {
+					include 'login.php';
 				}
 				?>
 			</div>

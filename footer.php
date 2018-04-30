@@ -12,5 +12,8 @@
 		</div>
 	</div>
 </footer>
+
+<script src="js/dist/script.min.js"></script>
+
 </body>
 </html>
