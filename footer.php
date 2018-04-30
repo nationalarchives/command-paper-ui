@@ -13,7 +13,7 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="./js/modernizr-custom.js"></script>
+<script type="text/javascript" src="js/lib/modernizr-custom.js"></script>
 <script type="text/javascript" src="./js/command-papers.js"></script>
 
 </body>
