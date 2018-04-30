@@ -15,11 +15,11 @@
 	<link rel="stylesheet" href="./css/tna-base.css?v=1.0" type="text/css" />
 	<link rel="stylesheet" href="./css/command-paper.css?v=1.0" type="text/css" />
 	<link rel="stylesheet" href="js/lib/jquery-ui/jquery-ui.min.css" type="text/css" />
-	<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="js/lib/jquery-ui/jquery-ui.min.js"></script>
 
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+
+    <script type="text/javascript" src="js/lib/modernizr-custom.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
