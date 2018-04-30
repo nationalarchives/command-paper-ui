@@ -45,7 +45,7 @@
 	<div class="container">
 		<div class="row" id="header">
 			<div class="col-md-6">
-				<img src="./img/logo-tna-white.png" class="img-responsive">
+				<img src="./img/logo-tna-white.png" class="img-responsive" alt="The National Archives - Command Papers">
 			</div>
 			<div class="col-md-6 text-right">
 
