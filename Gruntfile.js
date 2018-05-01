@@ -38,7 +38,11 @@ module.exports = function (grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['js/lib/jquery-1.10.2.min.js', 'js/lib/jquery-ui/jquery-ui.min.js', 'js/src/command-papers.js'],
+                src: [  'js/lib/jquery-1.10.2.min.js',
+                        'js/lib/jquery-ui/jquery-ui.min.js',
+                        'js/lib/jquery-ui/modernizr-custom.js',
+                        'js/src/command-papers.js'
+                ],
                 dest: 'js/dist/script.js'
             }
         },
