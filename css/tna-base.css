@@ -2473,7 +2473,7 @@ p {
 .button {
   background-color: #008484;
   color: #fff;
-  padding: 0.5em 0.9em;
+  padding: 0.5em;
   display: inline-block;
   min-width: 24px;
   text-align: center; }
@@ -2693,8 +2693,10 @@ label {
   font-weight: 400; }
 
 input[type="submit"] {
-  padding: 0.5em .9em;
+  padding: 0.3em .9em;
   border: 0;
+  height: 40px;
+  /*this height must match the standalone button class for single field forms */
   margin: 0; }
 
 input[type=text],
@@ -2829,6 +2831,7 @@ input[type="submit"]:hover {
     .form-row input[type=number],
     .form-row input[type=color],
     .form-row input[type=email],
+    .form-row input[type=date],
     .form-row textarea,
     .form-row select {
       width: 100%; }
