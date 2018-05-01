@@ -2705,6 +2705,7 @@ input[type=tel],
 input[type=number],
 input[type=color],
 input[type=email],
+input[type=date],
 input.width-half {
   border: 1px solid #ccc;
   padding: 2px;
@@ -2830,6 +2831,7 @@ input[type="submit"]:hover {
     .form-row input[type=number],
     .form-row input[type=color],
     .form-row input[type=email],
+    .form-row input[type=date],
     .form-row textarea,
     .form-row select {
       width: 100%; }
