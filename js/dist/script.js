@@ -38,3 +38,40 @@ if( isIE || isIE11 || isSafari ) {
         dateFormat: 'yy-mm-dd'
     });
 }
+
+/**
+ * Form validation
+ */
+
+$(document).ready(function() {
+    var cNumber = document.getElementById('CNumber').value;
+    var cMdate = new Date('2018-12-31');
+    var errorMessage = '<blockquote class="emphasis-alert"><p>Wrong</p></blockquote>';
+    $('#PublicationDateDue').on('change', function(e) {
+        var pubDate = e.target.value;
+        var date = new Date(pubDate);
+        if ( cNumber.match(/CM/)  ) {
+            console.log('CM match');
+            if ( date > cMdate ) {
+                console.log('wrong');
+                if ( $('.emphasis-alert').length === 0 ) {
+                    $('#PublicationDateDue').after(errorMessage);
+                }
+            } else {
+                console.log('correct');
+                $('.emphasis-alert').remove();
+            }
+        } else if ( cNumber.match(/CP/)  ) {
+            console.log('CP match');
+            if ( date <= cMdate ) {
+                console.log('wrong');
+                if ( $('.emphasis-alert').length === 0 ) {
+                    $('#PublicationDateDue').after(errorMessage);
+                }
+            } else {
+                console.log('correct');
+                $('.emphasis-alert').remove();
+            }
+        }
+    });
+});

@@ -6,6 +6,7 @@ function data( $get ) {
 	if ($get['page']=='edit') {
 
 		$data = array(
+		    'code' => 'CP9',
 			'legend' => 'Edit',
 			'message' => '',
 			'number' => $get['number'],
@@ -24,6 +25,7 @@ function data( $get ) {
 	} elseif ($get['page']=='create') {
 
 		$data = array(
+		    'code' => 'CM9',
 			'legend' => 'Create new',
 			'message' => '',
 			'number' => '226',
@@ -42,6 +44,7 @@ function data( $get ) {
 	} else {
 
 		$data = array(
+		    'code' => 'CM9',
 			'legend' => 'Delete',
 			'message' => '<div class="form-row"><blockquote class="emphasis-alert"><p><strong>Are you sure you want to delete this?</strong></p></blockquote></div>',
 			'number' => $get['number'],
