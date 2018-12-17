@@ -9,7 +9,7 @@ $data = data( $_GET );
 		<fieldset>
 			<legend><?php echo $data['legend'] ?></legend>
 			<?php echo $data['message'] ?>
-			<input type="hidden" id="CNumber" name="CNumber" value="<?php echo $data['code'] ?>" disabled>
+			<input type="hidden" id="cmd_prefix" name="cmd_prefix" value="<?php echo $data['code'] ?>" disabled>
 			<div class="form-row">
 				<label for="number">Number</label>
 				<input type="text" id="number" name="number" value="<?php echo $data['number'] ?>" disabled>

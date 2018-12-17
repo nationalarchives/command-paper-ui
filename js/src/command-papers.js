@@ -15,15 +15,24 @@ if( isIE || isIE11 || isSafari ) {
  */
 
 $(document).ready(function() {
-    var cNumber = document.getElementById('CNumber').value;
-    var cMdate = new Date('2018-12-31');
-    var errorMessage = '<blockquote class="emphasis-alert"><p>Wrong</p></blockquote>';
+    var prefix = document.getElementById('cmd_prefix').value;
+    var cmDdate = new Date('2018-12-31');
+    var errorMessage = '<blockquote class="emphasis-alert"><p>' +
+        'You have tried to change a publication date. The publication date entered' +
+        ' is invalid for Command Papers with the prefix <strong>' +
+        prefix +
+        '</strong>.  Please contact <a href="mailto:official.publishing@nationalarchives.gov.uk">' +
+        'official.publishing@nationalarchives.gov.uk</a> ' +
+        'to cancel the paper against the <strong>' +
+        prefix +
+        '</strong> prefix. After The National Archives has confirmed cancellation please use the ' +
+        'system again to request a new number prefix for the rescheduled publication date.' +
+        '</p></blockquote>';
     $('#PublicationDateDue').on('change', function(e) {
         var pubDate = e.target.value;
         var date = new Date(pubDate);
-        if ( cNumber.match(/CM/)  ) {
-            console.log('CM match');
-            if ( date > cMdate ) {
+        if ( prefix === 'CM'  ) {
+            if ( date > cmDdate ) {
                 console.log('wrong');
                 if ( $('.emphasis-alert').length === 0 ) {
                     $('#PublicationDateDue').after(errorMessage);
@@ -32,9 +41,8 @@ $(document).ready(function() {
                 console.log('correct');
                 $('.emphasis-alert').remove();
             }
-        } else if ( cNumber.match(/CP/)  ) {
-            console.log('CP match');
-            if ( date <= cMdate ) {
+        } else if ( prefix === 'CP'  ) {
+            if ( date <= cmDdate ) {
                 console.log('wrong');
                 if ( $('.emphasis-alert').length === 0 ) {
                     $('#PublicationDateDue').after(errorMessage);
