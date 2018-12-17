@@ -15,6 +15,10 @@
 	<link rel="stylesheet" href="./css/tna-base.css?v=1.1" type="text/css" />
 	<link rel="stylesheet" href="./css/command-paper.css?v=1.1" type="text/css" />
 	<link rel="stylesheet" href="js/lib/jquery-ui/jquery-ui.min.css" type="text/css" />
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
 
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">

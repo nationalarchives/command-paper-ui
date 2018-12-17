@@ -9,6 +9,7 @@ $data = data( $_GET );
 		<fieldset>
 			<legend><?php echo $data['legend'] ?></legend>
 			<?php echo $data['message'] ?>
+			<input type="hidden" id="CNumber" name="CNumber" value="<?php echo $data['code'] ?>" disabled>
 			<div class="form-row">
 				<label for="number">Number</label>
 				<input type="text" id="number" name="number" value="<?php echo $data['number'] ?>" disabled>
@@ -35,7 +36,7 @@ $data = data( $_GET );
 			</div>
 			<div class="form-row">
 				<label for="pub_due_date">Publication due date</label>
-				<input class="picker" type="date" id="pub_due_date" name="pub_due_date" value="<?php echo $data['pub_due_date'] ?>" aria-required="true" required <?php echo $data['disabled'] ?>>
+				<input class="picker" type="date" id="PublicationDateDue" name="pub_due_date" value="<?php echo $data['pub_due_date'] ?>" aria-required="true" required <?php echo $data['disabled'] ?>>
 			</div>
 			<div class="form-row">
 				<label for="requested">Date requested</label>
