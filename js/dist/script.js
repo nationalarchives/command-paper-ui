@@ -62,22 +62,18 @@ $(document).ready(function() {
         var date = new Date(pubDate);
         if ( prefix === 'CM'  ) {
             if ( date > cmDdate ) {
-                console.log('wrong');
                 if ( $('.emphasis-alert').length === 0 ) {
                     $('#PublicationDateDue').after(errorMessage);
                 }
             } else {
-                console.log('correct');
                 $('.emphasis-alert').remove();
             }
         } else if ( prefix === 'CP'  ) {
             if ( date <= cmDdate ) {
-                console.log('wrong');
                 if ( $('.emphasis-alert').length === 0 ) {
                     $('#PublicationDateDue').after(errorMessage);
                 }
             } else {
-                console.log('correct');
                 $('.emphasis-alert').remove();
             }
         }
