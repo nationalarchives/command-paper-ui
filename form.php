@@ -2,14 +2,14 @@
 
 include 'data.php';
 $data = data( $_GET );
-
+$prefix = substr($data['number'], 0, -3);
 ?>
 <div class="content-area">
 	<form>
 		<fieldset>
 			<legend><?php echo $data['legend'] ?></legend>
 			<?php echo $data['message'] ?>
-			<input type="hidden" id="cmd_prefix" name="cmd_prefix" value="<?php echo $data['code'] ?>" disabled>
+			<input type="hidden" id="cmd_prefix" name="cmd_prefix" value="<?php echo $prefix ?>" disabled>
 			<div class="form-row">
 				<label for="number">Number</label>
 				<input type="text" id="number" name="number" value="<?php echo $data['number'] ?>" disabled>
